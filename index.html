@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <button onclick="sum()" class="btn">+</button>
-    <button onclick="sub()" class="btn">-</button>
-    <button onclick="div()" class="btn">/</button>
-    <button onclick="mul()" class="btn">*</button>
+    <div>
+        <label for="first"> Введите первое число
+            <input type="text" class="first-number" id="first">
+        </label>
+        <label for="second"> Введите второе число
+            <input type="text" class="second-number" id="second">
+        </label>
+    </div>
+    <div class="buttons">
+        <button onclick="sum()" class="btn">+</button>
+        <button onclick="sub()" class="btn">-</button>
+        <button onclick="div()" class="btn">/</button>
+        <button onclick="mul()" class="btn">*</button>
+    </div>
+    <div class="result"></div>
     <script src="js/calc.js"></script>
 </body>
 </html>
